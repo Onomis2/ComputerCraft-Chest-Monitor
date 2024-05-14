@@ -17,7 +17,7 @@ function DisplayChest(chest, monitor)
         centerItem = center - (string.len(itemName) / 2)
         centerCount = center - (string.len(item.count) / 2) - 1
         monitor.setCursorPos(centerItem,parse)
-        monitor.setTextColor(0)
+        monitor.setTextColor(1)
         monitor.write(itemName)
         parse = parse + 1
         monitor.setCursorPos(centerCount,parse)
