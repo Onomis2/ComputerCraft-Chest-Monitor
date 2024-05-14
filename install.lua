@@ -4,6 +4,7 @@ if response then
     local content = response.readAll()
     response.close()
     local file = fs.open("chest_monitor.lua", "w")
+    print(file)
     file.write(content)
     file.close()
 
